@@ -91,9 +91,10 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 - kubectl create secret generic <secret-name> --from-literal=keyValue=ValueABC
 
-- For check the value generated:
-  echo -n 'ValueABC' | base64
-  echo -n 'VmFsdWVBQkM=' | base64 --decode
+## For check the secret value generated:
+
+- echo -n 'ValueABC' | base64
+- echo -n 'VmFsdWVBQkM=' | base64 --decode
 
 ## Get logs:
 
