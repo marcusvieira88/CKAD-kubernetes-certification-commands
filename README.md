@@ -102,7 +102,7 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 - kubectl logs -f <pod-name> <container-name> (MultiPod Container)
 - kubectl logs -f <pod-name> > logs.log (Export the logs to file)
 
-## Deployments commands:
+## Deployments commands (strategy types Recriate or RollingUpdate):
 
 - kubectl scale deploy <deployment-name> --replicas=7
 - kubectl set-image deploy <deployment-name> container-name=nginx:v1.1.1
