@@ -59,7 +59,7 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
   
 ## Configure Horizontal Pod Autoscaler to a ReplicaSet:
 
-- kubectl autoscale rs foo --min=2 --max=5 --cpu-percent=80
+- kubectl autoscale rs <replica-set-name> --min=2 --max=5 --cpu-percent=80
 
 ## Shortcuts:
 
