@@ -56,6 +56,10 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 - kubectl expose pod <pod-name> --type=ClusterIp --name=<service-name> --port=80 
 - kubectl expose deploy <pod-name> --type=NodePort --name=<service-name> --port=80 --target-port=8080
+  
+## Configure Horizontal Pod Autoscaler to a ReplicaSet:
+
+- kubectl autoscale rs foo --min=2 --max=5 --cpu-percent=80
 
 ## Shortcuts:
 
