@@ -15,12 +15,12 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 ## Linux alias:
 
-- export ns=<namespace-name>
+- export ns={namespace-name}
 - alias k='kubectl -n $ns'
 
 ## Set context:
 
-- kubectl config set-context <context-name>
+- kubectl config set-context {context-name}
 - kubectl config current-context
 
 ## Help command:
