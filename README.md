@@ -22,7 +22,7 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 - kubectl config get-contexts
 - kubectl config current-context       
-- kubectl config set-context {context-name}
+- kubectl config use-context {context-name}
 
 ## Help command:
 
