@@ -39,9 +39,9 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 ## Export configuration to file:
 
-- kubect get pod {pod-name} -o yaml > pod.yaml
-- kubect get deployment {deployment-name} -o yaml > deploy.yaml
-- kubect get service {service-name} -o yaml > service.yaml
+- kubectl get pod {pod-name} -o yaml > pod.yaml
+- kubectl get deployment {deployment-name} -o yaml > deploy.yaml
+- kubectl get service {service-name} -o yaml > service.yaml
 
 ## Export configuration without create resource (dry-run):
 
