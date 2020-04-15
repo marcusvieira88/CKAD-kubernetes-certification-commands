@@ -62,9 +62,15 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 - kubectl autoscale rs {replica-set-name} --min=2 --max=5 --cpu-percent=80
 
+## Create a DaemonSet (it creates one copy of the pody per node in the cluster):
+
+- kubectl create clusterip {service-name} --tcp=8080:80
+- kubectl create svc nodeport {service-name} --tcp=8080:80
+
 ## Shortcuts:
 
 - kubectl get rs (ReplicaSet)
+- kubectl get ds (DaemonSet)
 - kubectl describe cm (ConfigMap)
 - kubectl edit pv (PersistenceVolume)
 - kubectl delete pvc (PersistenceVolumeClaim)
