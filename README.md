@@ -67,33 +67,6 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 - kubectl create clusterip {service-name} --tcp=8080:80
 - kubectl create svc nodeport {service-name} --tcp=8080:80
 
-## Shortcuts:
-
-- kubectl get rs (ReplicaSet)
-- kubectl get ds (DaemonSet)
-- kubectl describe cm (ConfigMap)
-- kubectl edit pv (PersistenceVolume)
-- kubectl delete pvc (PersistenceVolumeClaim)
-- kubectl create svc (Service)
-- kubectl get po (Pod)
-- kubectl describe no (Node)
-- kubectl get ep (Endpoint)
-- kubectl describe ing (Ingress)
-- kubectl edit ns (Namespace)
-- kubectl get netpol (NetworkPolicy)
-- kubectl edit sa (ServiceAccount)
-- kubectl delete cj (CronJob)
-- kubectl get hpa (HorizontalSclale)
-
-## Labels:
-
-- kubectl label pod {pod-name} env=dev
-- kubectl label pod {pod-name} env=prod --overwrite
-
-## Taints:
-
-- kubectl taint nodes {node-name} app_label=prod:NoSchedule
-
 ## Create configMap:
 
 - kubectl create cm {confi-map-name} --from-literal=keyValue=ValueABC
@@ -134,6 +107,33 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 - kubectl get po -o wide (details in one line)
 - kubectl deploy --show-labels
 - kubectl get po -l env=prod (filter by label)
+
+## Labels:
+
+- kubectl label pod {pod-name} env=dev
+- kubectl label pod {pod-name} env=prod --overwrite
+
+## Taints:
+
+- kubectl taint nodes {node-name} app_label=prod:NoSchedule
+
+## Shortcuts:
+
+- kubectl get rs (ReplicaSet)
+- kubectl get ds (DaemonSet)
+- kubectl describe cm (ConfigMap)
+- kubectl edit pv (PersistenceVolume)
+- kubectl delete pvc (PersistenceVolumeClaim)
+- kubectl create svc (Service)
+- kubectl get po (Pod)
+- kubectl describe no (Node)
+- kubectl get ep (Endpoint)
+- kubectl describe ing (Ingress)
+- kubectl edit ns (Namespace)
+- kubectl get netpol (NetworkPolicy)
+- kubectl edit sa (ServiceAccount)
+- kubectl delete cj (CronJob)
+- kubectl get hpa (HorizontalSclale)
 
 ### References
 - [dgkanatsios](https://github.com/dgkanatsios/CKAD-exercises)
