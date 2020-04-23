@@ -74,7 +74,11 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 
 ## Create configMap:
 
-- kubectl create cm {confi-map-name} --from-literal=keyValue=ValueABC
+- kubectl create cm {config-map-name} --from-literal=keyValue=ValueABC
+
+## Add the value to an existing config map:
+
+- kubectl edit cm {config-map-name} (add the new value in the data section)
 
 ## Create secret:
 
