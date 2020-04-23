@@ -48,6 +48,11 @@ This is a list of useful Kubernetes commands used during my prepartion for the C
 - kubectl run {pod-name} --image=nginx --restart=Never dry-run -o yaml > pod.yaml 
 - kubectl run {deployment-name} --image=nginx --replicas=3 dry-run -o yaml > deploy.yaml
 
+## Apply configuration from a file:
+
+- kubectl apply -f pod.yaml
+- kubectl apply -f secret.yaml 
+
 ## Create a service:
 
 - kubectl create clusterip {service-name} --tcp=8080:80
